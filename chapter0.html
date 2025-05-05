@@ -180,6 +180,15 @@ If not… well, try again. This is programming now. Welcome to the infinite loop
 </ul>
 
 <hr>
+<div id="toc"></div>
+
+<script>
+  fetch('toc.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('toc').innerHTML = data;
+    });
+</script>
 
 </body>
 </html>
