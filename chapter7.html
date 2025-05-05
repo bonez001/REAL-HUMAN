@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Chapter 7 of the Cursor AI guide by G. Mudfish and Real Human. Learn APIs in Python with humor, practical code, and internet-powered experiments." />
+  <meta name="keywords" content="Cursor AI, APIs, Python requests, JSON, beginner coding, G. Mudfish, Real Human, internet programming" />
+  <meta name="author" content="G. Mudfish, Real Human" />
+  <title>Chapter 7: APIs – Talking to the Internet Without Crying</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+    h2, h3 {
+      color: #111;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1rem;
+      color: #555;
+      font-style: italic;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    hr {
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <hr>
+
+  <h2>📖 Chapter 7: <strong>APIs – Talking to the Internet Without Crying</strong></h2>
+
+  <blockquote>
+    “An API is like a vending machine: you send it a request, it gives you something back—sometimes candy, sometimes sadness.”
+  </blockquote>
+
+  <hr>
+
+  <h3>🌐 What Is an API?</h3>
+
+  <p><strong>API</strong> stands for: <em>Application Programming Interface</em>.<br>
+  It may sound like a dystopian committee, but it’s actually just:</p>
+
+  <blockquote><strong>A way for your code to talk to other people’s code. Over the internet. Politely.</strong></blockquote>
+
+  <h4>🎩 Analogy Time:</h4>
+  <ul>
+    <li>Calling an API is like placing a to-go order at a restaurant.</li>
+    <li>You send a request. The server sends back a wrapped result (often JSON).</li>
+    <li>Mess it up? You get an error burrito.</li>
+  </ul>
+
+  <hr>
+
+  <h3>🧪 Try This: Fetching Cat Facts</h3>
+
+  <pre><code>import requests
+
+response = requests.get("https://catfact.ninja/fact")
+data = response.json()
+
+print("🐱 Did you know?", data["fact"])</code></pre>
+
+  <p><strong>Run it again.</strong> New cat facts every time.<br>
+  You’ve just created a <strong>code-powered trivia machine</strong>.</p>
+
+  <p><strong>You. Just. Talked. To. The Internet.</strong> You’re unstoppable now.</p>
+
+  <hr>
+
+  <h3>🧠 What Just Happened?</h3>
+
+  <ul>
+    <li><code>requests.get(url)</code> → makes a polite GET request</li>
+    <li><code>.json()</code> → turns the response into a dictionary</li>
+    <li><code>data["fact"]</code> → grabs the part you want</li>
+  </ul>
+
+  <p>You’re not browsing the web now.<br>
+  <strong>You’re commanding it.</strong></p>
+
+  <hr>
+
+  <h3>☕ Cursor Tip: “Write a function to call an API”</h3>
+
+  <pre><code># Write a function that gets a random joke from an API and prints it nicely</code></pre>
+
+  <p>Then try:</p>
+  <ul>
+    <li>“Add error handling”</li>
+    <li>“Format the joke as a text box”</li>
+    <li>“Make it pirate-themed”</li>
+  </ul>
+
+  <p>Cursor is <strong>excellent</strong> at API scaffolding. Use it like your integration butler.</p>
+
+  <hr>
+
+  <h3>🧛‍♂️ API Responses Are Usually JSON</h3>
+
+  <pre><code>{
+  "fact": "Cats sleep 70% of their lives.",
+  "length": 33
+}</code></pre>
+
+  <p>That’s a dictionary. A <strong>string-based treasure chest</strong>.<br>
+  JSON = the universal language of APIs.</p>
+
+  <hr>
+
+  <h3>⚠️ API Errors – The Awkward Silence</h3>
+
+  <pre><code>if response.status_code != 200:
+    print("Something went wrong:", response.status_code)</code></pre>
+
+  <p><strong>Add error-catching:</strong></p>
+
+  <pre><code>try:
+    data = response.json()
+except ValueError:
+    print("API sent back nonsense.")</code></pre>
+
+  <p><strong>Your job:</strong> Don’t trust the internet blindly.<br>
+  <strong>Cursor’s job:</strong> Help you handle chaos with style.</p>
+
+  <hr>
+
+  <h3>🎮 Mini Project: Weather App for Pets</h3>
+
+  <pre><code># Write a function that asks for a city and returns the current weather using OpenWeatherMap API
+# Format the weather for a cat audience</code></pre>
+
+  <ul>
+    <li>Add personality (“It’s 22°C. Perfect napping weather.”)</li>
+    <li>Handle bad inputs (“That city doesn’t exist, but we support your imagination.”)</li>
+    <li>React with moods based on temperature</li>
+  </ul>
+
+  <p><strong>You just built a weather therapist for felines.</strong></p>
+
+  <hr>
+
+  <h3>🧪 Bonus: Use a Public API Directory</h3>
+
+  <ul>
+    <li><a href="https://rapidapi.com/">https://rapidapi.com/</a></li>
+    <li><a href="https://public-apis.io/">https://public-apis.io/</a></li>
+    <li><a href="https://github.com/public-apis/public-apis">GitHub: Public APIs</a></li>
+  </ul>
+
+  <p>Find APIs for:</p>
+  <ul>
+    <li>Space facts</li>
+    <li>Dad jokes</li>
+    <li>Crypto scams</li>
+    <li>Weird holidays</li>
+    <li>Kanye quotes</li>
+  </ul>
+
+  <pre><code># Use this API to create a random inspiration quote generator</code></pre>
+
+  <p>Cursor turns your code into a philosopher. Or a chaos engine. Or both.</p>
+
+  <hr>
+
+  <h3>🧃 API Recap Smoothie</h3>
+
+  <ul>
+    <li><strong>API = polite internet request machine</strong></li>
+    <li><strong>You send a URL → get back a JSON gift</strong></li>
+    <li>Use Python’s <code>requests</code> library</li>
+    <li>Cursor helps with:
+      <ul>
+        <li>Function scaffolding</li>
+        <li>Error handling</li>
+        <li>Weirdness + polish</li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h3>🎁 Challenge: The Multi-API Mega Bot</h3>
+
+  <pre><code># Build a chatbot that:
+# - Uses one API to get a random joke
+# - Another to get a random inspirational quote
+# - And another to generate a fake user profile
+# Let the user choose what they want</code></pre>
+
+  <p><strong>You now have a modular, API-powered conversation machine.</strong><br>
+  You are the architect of delightful nonsense.</p>
+
+</body>
+</html>
 
