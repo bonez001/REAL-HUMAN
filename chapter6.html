@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Chapter 6 of the beginner’s guide to Cursor AI by G. Mudfish and Real Human. Learn debugging in Python with humor, AI tips, and analogies." />
+  <meta name="keywords" content="Cursor AI, debugging, Python errors, print statements, try/except, Real Human, G. Mudfish, code humor" />
+  <meta name="author" content="G. Mudfish, Real Human" />
+  <title>Chapter 6: Debugging – Confess Your Sins to the Console</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+    h2, h3 {
+      color: #111;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1rem;
+      color: #555;
+      font-style: italic;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    hr {
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <hr>
+
+  <h2>📖 Chapter 6: <strong>Debugging – Confess Your Sins to the Console</strong></h2>
+
+  <blockquote>
+    “To err is human. To debug is divine. To blame the AI is...inevitable.”
+  </blockquote>
+
+  <hr>
+
+  <h3>🧟 What <em>Is</em> a Bug, Really?</h3>
+
+  <p>A <strong>bug</strong> is not:</p>
+  <ul>
+    <li>A moral failure</li>
+    <li>A sign you should become a goat farmer</li>
+  </ul>
+
+  <p>A bug is simply this:</p>
+  <blockquote><strong>Your code is doing something. But not what you meant.</strong></blockquote>
+
+  <p>Maybe:</p>
+  <ul>
+    <li>You mistyped a variable name</li>
+    <li>You forgot that computers are overly literal</li>
+    <li>You tried to divide by zero (again)</li>
+  </ul>
+
+  <p>The good news? Every bug is a clue. A breadcrumb. A puzzle.<br>
+  And debugging is the art of <strong>turning “WHY???” into “ahhhh.”</strong></p>
+
+  <hr>
+
+  <h3>🧪 Cursor in Action: The Built-In Therapist</h3>
+
+  <p>Let’s break something <em>on purpose</em>:</p>
+
+  <pre><code>def cheer(name):
+    print("Go " + Name + "! You got this!")
+
+cheer("Luna")</code></pre>
+
+  <p><strong>See the problem?</strong></p>
+  <ul>
+    <li>Cursor will underline the mistake</li>
+    <li>It may suggest changing <code>Name</code> to <code>name</code></li>
+    <li>It might offer life advice too if you ask nicely</li>
+  </ul>
+
+  <blockquote>
+    <strong>AI Tip:</strong> Right-click → “Explain this code”<br>
+    Or comment:<br>
+    <code># Why is this error happening?</code><br>
+    Cursor will try to explain in words, not tears.
+  </blockquote>
+
+  <hr>
+
+  <h3>🔍 Strategy 1: The Holy Trinity of Debugging</h3>
+
+  <ol>
+    <li><strong>Read the Error Message</strong>
+      <ul>
+        <li>It’s usually right. Or <em>almost</em> right.</li>
+        <li>Look for line numbers and keywords like <code>TypeError</code>, <code>NameError</code>, or <code>ExistentialCrisisError</code> (not real...yet)</li>
+      </ul>
+    </li>
+
+    <li><strong>Use Print Statements Like Confetti</strong>
+      <pre><code>def divide(x, y):
+    print("x:", x)
+    print("y:", y)
+    return x / y</code></pre>
+    </li>
+
+    <li><strong>Isolate the Problem</strong>
+      <ul>
+        <li>Comment stuff out</li>
+        <li>Break big blocks into functions</li>
+        <li>Ask: “When did this code go from cute to cursed?”</li>
+      </ul>
+    </li>
+  </ol>
+
+  <hr>
+
+  <h3>🎩 Analogy Break: Bugs Are Like…</h3>
+
+  <table>
+    <tr><th>Bug Type</th><th>Real-Life Parallel</th></tr>
+    <tr><td><code>SyntaxError</code></td><td>Forgetting to close your parentheses like leaving the fridge open</td></tr>
+    <tr><td><code>NameError</code></td><td>Calling your friend “Chad” when his name is actually “Brad”</td></tr>
+    <tr><td><code>IndexError</code></td><td>Trying to grab the 11th donut in a 5-donut box</td></tr>
+    <tr><td><code>NoneType</code> error</td><td>Asking someone who doesn't exist to do math</td></tr>
+  </table>
+
+  <hr>
+
+  <h3>🧰 Strategy 2: Use Cursor Like a Debugging Butler</h3>
+
+  <p>Try asking Cursor:</p>
+  <ul>
+    <li>"Explain this error"</li>
+    <li>"Fix this function"</li>
+    <li>"Why is this variable undefined?"</li>
+    <li>"Add logging to this function to help me debug"</li>
+  </ul>
+
+  <p>It’ll:</p>
+  <ul>
+    <li>Point to likely issues</li>
+    <li>Rewrite confusing bits</li>
+    <li>Sometimes hallucinate—but <em>helpfully</em></li>
+  </ul>
+
+  <p><strong>Remember:</strong> Cursor is not infallible, but it’s a great second brain when yours is fried.</p>
+
+  <hr>
+
+  <h3>🎮 Mini Project: Build a Buggy Game... Then Fix It</h3>
+
+  <pre><code># Write a number guessing game with intentional bugs</code></pre>
+
+  <p>Then:</p>
+  <ul>
+    <li>Try to run it</li>
+    <li>Read the error messages</li>
+    <li>Use <code>print()</code> to find where it breaks</li>
+    <li>Fix it with Cursor’s help</li>
+  </ul>
+
+  <p>It’s like Pokémon, but the monsters are your own logic mistakes.</p>
+
+  <hr>
+
+  <h3>✨ Advanced Debugging Moves</h3>
+
+  <h4><code>try/except</code>: The "Don’t Panic" Button</h4>
+
+  <pre><code>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Math exploded! Try again.")</code></pre>
+
+  <p>This lets your code:</p>
+  <ul>
+    <li>Attempt something risky</li>
+    <li>Catch the error</li>
+    <li>Respond with grace (or sass)</li>
+  </ul>
+
+  <p><em>Ask Cursor:</em></p>
+  <pre><code># Wrap this in try/except and print a helpful message</code></pre>
+
+  <h4>Logging &gt; Printing (Eventually)</h4>
+
+  <p>Once your projects grow, use <code>logging</code> for pro-style bug hunts.</p>
+
+  <pre><code># Replace print statements with logging</code></pre>
+
+  <p>Suddenly, your program is writing its own diary.</p>
+
+  <hr>
+
+  <h3>😌 Emotional Debugging Tips</h3>
+
+  <ul>
+    <li><strong>Walk away.</strong> Seriously. Go eat something.</li>
+    <li><strong>Rubber duck method:</strong> Explain your code to an inanimate object. Cursor is your digital duck.</li>
+    <li><strong>Ask for help.</strong> Cursor. Stack Overflow. Your dog. They’re all valid.</li>
+    <li><strong>Celebrate each fix.</strong> Each bug is a lesson. And an excuse for a snack.</li>
+  </ul>
+
+  <hr>
+
+  <h3>🧃 Debug Recap Smoothie</h3>
+
+  <ul>
+    <li><strong>Print</strong> like your life depends on it</li>
+    <li><strong>Read the errors</strong>; don’t fear them</li>
+    <li><strong>Use Cursor</strong> to refactor, explain, or guess</li>
+    <li><strong>Bugs ≠ failure</strong>. They’re feedback. With sharp teeth.</li>
+  </ul>
+
+  <hr>
+
+  <h3>🎁 Challenge: Fix This Disaster</h3>
+
+  <pre><code># Write a function to calculate BMI with several subtle bugs
+# Then help me debug it step by step</code></pre>
+
+  <p>Use <code>print()</code> to track values. Use <code>try/except</code> to catch divide-by-zero.<br>
+  Use your <strong>brain + AI</strong> combo like a code-powered Gundam.</p>
+
+</body>
+</html>
 
