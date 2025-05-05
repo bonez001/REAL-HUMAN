@@ -4,6 +4,7 @@
 Cursor AI: Volume I – Learn to Code with AI as Your Sidekick
 
 SITE: https://gmudfish.github.io/Cursor-AI-Beginner-REALHUMAN/
+
 *An intuitive, hilarious, beginner-friendly coding journey with Python and Cursor AI.*
 
 ---
