@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Chapter 2 of the Real Human & G. Mudfish Cursor AI book: a hilarious and beginner-friendly introduction to variables, data types, and control flow." />
+  <meta name="keywords" content="Cursor AI, learn Python, variables, control flow, data types, beginner coding, humor coding guide" />
+  <meta name="author" content="G. Mudfish, Real Human" />
+  <title>Chapter 2: Code is Thought, Made Tappable</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+    h2, h3 {
+      color: #111;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1rem;
+      color: #555;
+      font-style: italic;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    hr {
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <hr>
+
+  <h2>📖 Chapter 2: Code is Thought, Made Tappable</h2>
+
+  <blockquote>
+    “Programming is just telling a really picky genie exactly what you want, using math and whisper-yells.”
+  </blockquote>
+
+  <hr>
+
+  <h3>🎩 What Is Code <em>Really</em>?</h3>
+
+  <p>Let’s clear something up:</p>
+
+  <p>Code isn’t magic.<br>
+  It just <strong>looks</strong> like magic until you know the trick.<br>
+  Then it’s just...a very obedient list of instructions.</p>
+
+  <p>Writing code is like:</p>
+  <ul>
+    <li>Writing a recipe that a robot chef must follow</li>
+    <li>Giving IKEA instructions to a hyper-literal alien</li>
+    <li>Talking to a toddler who’s very good at math but needs <em>exactly</em> the right phrasing or they’ll put glue in the toaster</li>
+  </ul>
+
+  <p>In this chapter, we’re going to teach that toddler (the computer) how to:</p>
+  <ul>
+    <li>Store stuff in memory</li>
+    <li>Decide things</li>
+    <li>Act based on what it knows</li>
+  </ul>
+
+  <p>All while using <strong>Cursor AI</strong> to help us learn faster, and mess up more gloriously.</p>
+
+  <hr>
+
+  <h3>🧠 Part 1: Variables – Your Brain’s Sticky Notes</h3>
+
+  <p>A <strong>variable</strong> is just a name for a thing. That’s it.</p>
+
+  <p>Think of a variable like a <strong>label on a box</strong>. Inside the box, you might put:</p>
+  <ul>
+    <li>A number</li>
+    <li>A word</li>
+    <li>A goat (digitally speaking)</li>
+  </ul>
+
+  <h4>🧪 Try This (in Cursor)</h4>
+
+  <pre><code># Store my name in a variable
+name = "Ziggy"
+
+# Greet me like I'm royalty
+print("Greetings, noble " + name + " of Code Mountain.")</code></pre>
+
+  <p>You just made the computer remember something. It’s like teaching a dog your name, except instead of licking you, it prints it on command.</p>
+
+  <h4>⚠️ Variable Naming Tip:</h4>
+  <ul>
+    <li>Don’t be cryptic.</li>
+    <li>Bad: <code>x = 3000</code></li>
+    <li>Better: <code>spaceship_speed = 3000</code></li>
+    <li>Best: <code>spaceship_speed_in_dog_years = 3000</code></li>
+  </ul>
+
+  <hr>
+
+  <h3>🧃 Part 2: Data Types – What’s in the Box?</h3>
+
+  <p>The computer doesn’t just want to know <strong>the name</strong> of the box. It wants to know <strong>what kind of thing</strong> is in there.</p>
+
+  <p>Here are the core data types, with helpful translations:</p>
+
+  <table>
+    <tr>
+      <th>Python Type</th>
+      <th>Human Equivalent</th>
+      <th>Example</th>
+    </tr>
+    <tr>
+      <td><code>str</code> (string)</td>
+      <td>Text/sentences</td>
+      <td><code>"Banana Smoothie"</code></td>
+    </tr>
+    <tr>
+      <td><code>int</code> (integer)</td>
+      <td>Whole number</td>
+      <td><code>42</code></td>
+    </tr>
+    <tr>
+      <td><code>float</code></td>
+      <td>Decimal number</td>
+      <td><code>3.14159</code></td>
+    </tr>
+    <tr>
+      <td><code>bool</code></td>
+      <td>True/False (aka binary sass)</td>
+      <td><code>True</code>, <code>False</code></td>
+    </tr>
+  </table>
+
+  <h4>🎨 Intuitive Analogy:</h4>
+  <ul>
+    <li>A string is like <strong>a sticky note</strong> with handwriting on it.</li>
+    <li>An int is like <strong>a locker number</strong>.</li>
+    <li>A float is like <strong>a latte recipe</strong> (too precise).</li>
+    <li>A bool is <strong>a light switch</strong> (on/off).</li>
+  </ul>
+
+  <h4>🧪 Try This:</h4>
+
+  <pre><code># Define a menu item and its price
+item_name = "Pumpkin Spice Ramen"
+price = 9.99
+in_stock = True
+
+# Print a sentence using them
+print("Today's special:", item_name)
+print("Price: $", price)
+print("In stock:", in_stock)</code></pre>
+
+  <hr>
+
+  <h3>🤖 Cursor Tip: Hover for Type Hints</h3>
+  <p>In Cursor, if you hover over a variable, it often shows you what <strong>type</strong> the AI <em>thinks</em> it is. It’s like the editor is psychic—<em>but only for Python</em>.</p>
+
+  <hr>
+
+  <h3>🔀 Part 3: Control Flow – Telling the Code When to Panic</h3>
+
+  <p>Now we teach the computer to <strong>make choices</strong>.</p>
+
+  <p>Imagine you’re building a robot that only makes smoothies if it’s not Monday. You need a condition.</p>
+
+  <pre><code>day = "Monday"
+
+if day == "Monday":
+    print("No smoothies. Only existential dread.")
+else:
+    print("Here's your banana-joy slush!")</code></pre>
+
+  <h4>💡 Analogy:</h4>
+  <p>An <code>if</code> statement is like a <strong>fork in the road</strong>.</p>
+  <p>The robot checks the sign and says: <em>“If the sign says ‘Danger’, go left. Otherwise, go right and get a popsicle.”</em></p>
+
+  <hr>
+
+  <h3>🧪 Cursor Practice: Randomized Sarcasm Machine</h3>
+
+  <pre><code>import random
+
+mood = random.choice(["happy", "grumpy", "existential"])
+
+if mood == "happy":
+    print("What a lovely day to debug memory leaks!")
+elif mood == "grumpy":
+    print("No. I won’t even compile today.")
+else:
+    print("Does any of this code even matter?")</code></pre>
+
+  <p>Press <code>Cmd+R</code> a few times. The robot has feelings now.</p>
+
+  <hr>
+
+  <h3>✨ Quick Recap</h3>
+
+  <p>So far, you've:</p>
+  <ul>
+    <li>Stored memories with <strong>variables</strong></li>
+    <li>Picked the right kind of mental containers with <strong>data types</strong></li>
+    <li>Made your program <strong>think</strong> (kinda) with <strong>if/else</strong></li>
+  </ul>
+
+  <p>You are now 23.4% wizard.<br>
+  <em>(Scientific estimate. ±2% if you're wearing socks.)</em></p>
+
+  <hr>
+
+  <h3>🎁 Mini Project: Robo Barista</h3>
+
+  <p>Using everything above, ask Cursor to help you write:</p>
+
+  <pre><code># Ask the user their name
+# Ask them to choose a drink (coffee, tea, or mystery juice)
+# If they choose 'mystery juice', respond with fear
+# Otherwise, serve it with delight</code></pre>
+
+  <p>Write the comment. Let Cursor suggest. Edit, run, and cackle.</p>
+
+</body>
+</html>
