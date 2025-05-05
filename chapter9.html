@@ -1,1 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Chapter 9 of the Cursor AI guide. Learn how to work with AI like Cursor effectively using prompt-first coding, AI refactoring, and conversational development." />
+  <meta name="keywords" content="Cursor AI, AI workflow, pair programming, Python AI assistant, prompt engineering, G. Mudfish, Real Human, code refactoring" />
+  <meta name="author" content="G. Mudfish, Real Human" />
+  <title>Chapter 9: The AI Workflow – Coding with a Robotic Sidekick</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+    h2, h3 {
+      color: #111;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1rem;
+      color: #555;
+      font-style: italic;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    hr {
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <hr>
+
+  <h2>📖 Chapter 9: <strong>The AI Workflow – Coding with a Robotic Sidekick</strong></h2>
+
+  <blockquote>
+    “You’re not just coding. You’re conducting a duet. And your partner is an autocomplete ghost with an encyclopedic memory and a flair for drama.”
+  </blockquote>
+
+  <hr>
+
+  <h3>🤝 Working <em>with</em> AI, Not <em>for</em> It</h3>
+
+  <p>Using Cursor AI is like pair-programming with:</p>
+  <ul>
+    <li>A junior dev</li>
+    <li>A senior dev</li>
+    <li>And a caffeine-addled autocomplete engine</li>
+  </ul>
+
+  <p>Cursor doesn’t just finish your code—it:</p>
+  <ul>
+    <li>Writes entire functions from a sentence</li>
+    <li>Refactors your mess into elegance</li>
+    <li>Answers your “what does this even do” questions</li>
+    <li>Occasionally hallucinates, like a genius who skipped lunch</li>
+  </ul>
+
+  <p>You need a <strong>workflow</strong> that’s both structured and flexible—like jazz in a helmet store.</p>
+
+  <hr>
+
+  <h3>🧠 Step 1: Write the Comment First (aka Prompt Engineering for Code)</h3>
+
+  <p>Cursor <strong>loves</strong> clear instructions:</p>
+
+  <pre><code># Create a function that checks if a number is prime</code></pre>
+
+  <p>Then try a more detailed version:</p>
+
+  <pre><code># Write a function that:
+# - checks if a number is prime
+# - returns True or False
+# - handles edge cases
+# - uses early exit for speed</code></pre>
+
+  <p>You’re <strong>ordering code</strong> like a very technical waiter.</p>
+
+  <hr>
+
+  <h3>🧪 Cursor Prompt Practice</h3>
+
+  <ol>
+    <li><code># Make a to-do list app</code></li>
+    <li><code># Let the user add, remove, and list tasks</code></li>
+    <li><code># Save the tasks in a JSON file</code></li>
+    <li><code># Add error handling if the file doesn't exist</code></li>
+  </ol>
+
+  <p>Cursor will follow your lead like a caffeinated golden retriever. 🐕</p>
+
+  <hr>
+
+  <h3>🧰 Step 2: Edit the AI's Output (Don't Just Trust It)</h3>
+
+  <p>Cursor is good—but <em>you</em> are the final authority.</p>
+
+  <p><strong>Always:</strong></p>
+  <ul>
+    <li>Read it</li>
+    <li>Test it</li>
+    <li>Refactor it</li>
+  </ul>
+
+  <p>Ask yourself:</p>
+  <ul>
+    <li>Is this readable?</li>
+    <li>Is this efficient?</li>
+    <li>Does this make sense to <em>future me</em> at 2am?</li>
+  </ul>
+
+  <p><strong>Your job:</strong> curate the raw output into art (or at least runnable code).</p>
+
+  <hr>
+
+  <h3>🧙‍♂️ Step 3: Use It Like a Dev Team</h3>
+
+  <table>
+    <tr><th>Cursor Skill</th><th>Prompt</th></tr>
+    <tr><td>Explain code</td><td><code># What does this function do?</code></td></tr>
+    <tr><td>Translate code</td><td><code># Convert this to JavaScript</code></td></tr>
+    <tr><td>Refactor code</td><td><code># Make this more efficient</code></td></tr>
+    <tr><td>Add logging</td><td><code># Add debug logs to this function</code></td></tr>
+    <tr><td>Write tests</td><td><code># Create unit tests for this class</code></td></tr>
+  </table>
+
+  <p>It’s like five interns, one genius, and Stack Overflow’s ghost in your editor.</p>
+
+  <hr>
+
+  <h3>💡 Strategy: Chat with Your Code</h3>
+
+  <p>Treat Cursor like a conversation partner:</p>
+  <ol>
+    <li>Comment what you want</li>
+    <li>Let it generate</li>
+    <li>Comment what’s wrong</li>
+    <li>Let it fix it</li>
+    <li>Repeat</li>
+  </ol>
+
+  <pre><code># This function is too slow. Can you optimize it?</code></pre>
+  <pre><code># I don't like the variable names. Make them friendlier.</code></pre>
+
+  <p>You’re not just coding. You’re collaborating with a <strong>slightly manic assistant who never sleeps</strong>.</p>
+
+  <hr>
+
+  <h3>🎮 Mini Project: Refactor With AI</h3>
+
+  <pre><code># Here's a messy function. Refactor it into clean, readable code.</code></pre>
+
+  <p>Watch Cursor:</p>
+  <ul>
+    <li>Extract smaller functions</li>
+    <li>Rename things</li>
+    <li>Add docstrings like a nerdy poetry bot</li>
+  </ul>
+
+  <p>Then try:</p>
+  <ul>
+    <li>“Add unit tests”</li>
+    <li>“Explain this like I’m five”</li>
+    <li>“Rewrite it in Shakespearean Python”</li>
+  </ul>
+
+  <hr>
+
+  <h3>🛠️ Pro-Level Moves</h3>
+
+  <ul>
+    <li>Use the sidebar chat to ask questions</li>
+    <li>Highlight code → right-click → "Explain" or "Fix"</li>
+    <li>Control verbosity by adjusting prompt detail</li>
+    <li>Use Git to catch AI sneakiness</li>
+  </ul>
+
+  <blockquote>
+    <strong>The AI is confident, not always correct.</strong><br>
+    Like a charismatic barista making up espresso science.
+  </blockquote>
+
+  <hr>
+
+  <h3>🧃 Workflow Recap Smoothie</h3>
+
+  <ul>
+    <li>Comment before you code</li>
+    <li>Edit everything AI gives you</li>
+    <li>Ask follow-up prompts</li>
+    <li>Use Cursor like a team member</li>
+    <li>Mix structure with curiosity. That’s the vibe.</li>
+  </ul>
+
+  <hr>
+
+  <h3>🎁 Challenge: Build Something Entirely with Comments</h3>
+
+  <pre><code># A command-line calculator
+# that handles +, -, *, /
+# with input validation and history tracking</code></pre>
+
+  <p>Then guide it further:</p>
+  <ul>
+    <li>“Add option to save result to file”</li>
+    <li>“Make it pretty with ASCII art”</li>
+    <li>“Add sarcastic responses if input is invalid”</li>
+  </ul>
+
+  <p><strong>You’re coding by vibes now. And that’s powerful.</strong></p>
+
+</body>
+</html>
 
