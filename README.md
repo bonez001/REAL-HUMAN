@@ -1,8 +1,7 @@
 # REAL-HUMAN
 
 # 🤖  Cursor AI for Beginner by Real Human and G. Mudfish
-Cursor AI: Volume I – Learn to Code with AI as Your Sidekick
-
+Cursor AI: Volume I 
 SITE: https://gmudfish.github.io/Cursor-AI-Beginner-REALHUMAN/
 
 *An intuitive, hilarious, beginner-friendly coding journey with Python and Cursor AI.*
