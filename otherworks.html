@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G. Mudfish Works</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .works-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .work-card {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .work-card:hover {
+      transform: translateY(-4px);
+    }
+    .work-thumbnail {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .work-title {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .work-description {
+      margin: 0.5rem 0 1rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .work-link {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 G. Mudfish's Works</h1>
+  <div class="works-container">
+
+    <!-- Work Item 1 -->
+    <section class="work-card">
+      <img class="work-thumbnail" src="https://via.placeholder.com/400x200" alt="Work Thumbnail">
+      <div class="work-title">Book Title One</div>
+      <p class="work-description">A short description of the work goes here. It can be a book, article, or story project.</p>
+      <a class="work-link" href="https://example.com" target="_blank">View Work →</a>
+    </section>
+
+    <!-- Work Item 2 -->
+    <section class="work-card">
+      <img class="work-thumbnail" src="https://via.placeholder.com/400x200" alt="Work Thumbnail">
+      <div class="work-title">Another Work Title</div>
+      <p class="work-description">This could be a story, a project, or a publication. Just edit and duplicate this block for more entries.</p>
+      <a class="work-link" href="https://example.com" target="_blank">Explore →</a>
+    </section>
+
+    <!-- Add more work-card sections as needed -->
+
+  </div>
+</body>
+</html>
