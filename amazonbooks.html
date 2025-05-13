@@ -1,1 +1,107 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G. Mudfish's Amazon Books</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .works-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .work-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .work-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .work-thumbnail {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .work-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 1rem 0 0.5rem 0;
+    }
+
+    .work-description {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .work-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 G. Mudfish's Amazon Books</h1>
+  <div class="works-container" id="books-container">
+    <!-- Books will be inserted here by the script -->
+  </div>
+
+  <!-- 🔽 INSERT BOOK SCRIPT HERE -->
+  <script>
+    const amazonBooks = [
+      {
+        asin: "B0F59YL99N",
+        title: "The Mythic Prompt Arsenal: 36 Advanced Prompt Techniques for Unlocking AI's True Potential ",
+        description: "36 original prompting frameworks developed through extensive experimentation with leading AI models such as ChatGPT and Claude. Foundational methods including Chain of Thought, ReACT, and Skeleton of Thought, presented alongside novel contributions like Prompt Reweave Looping (PRL), Mistform Mirror, and Soulframe of Thought"
+      },
+      // 👉 To add more books, just copy this block:
+      // {
+      //   asin: "NEW_ASIN_HERE",
+      //   title: "New Book Title",
+      //   description: "Brief description of the new book."
+      // }
+    ];
+
+    const container = document.getElementById('books-container');
+
+    amazonBooks.forEach(book => {
+      const card = document.createElement('section');
+      card.className = 'work-card';
+      card.innerHTML = `
+        <img class="work-thumbnail" src="https://m.media-amazon.com/images/I/${book.asin}.jpg" alt="${book.title} Cover">
+        <div class="work-title">${book.title}</div>
+        <p class="work-description">${book.description}</p>
+        <a class="work-link" href="https://www.amazon.com/dp/${book.asin}" target="_blank">🛒 View on Amazon</a>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+  <!-- 🔼 SCRIPT ENDS HERE -->
+
+</body>
+</html>
