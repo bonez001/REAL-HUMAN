@@ -39,10 +39,14 @@
     }
 
     .work-thumbnail {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* 🔽 limits tall images */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 
     .work-title {
       font-size: 1.2rem;
